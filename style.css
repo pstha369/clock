@@ -1,24 +1,27 @@
+/* ---Basic styling--- */
 *{
-    margin:0;
-    color:white;
-    padding:0;
+    margin: 0;
+    color: white;
+    padding: 0;
     box-sizing: border-box;
 }
 body{
-    background-color:rgba(0, 0, 0, 0.9);
-    min-height:100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    min-height: 100vh;
     display: flex;
     justify-content:center;
     align-items: center;
     flex-direction: column;
-    gap:30px;
+    gap: 30px;
 }
+/* ---Styling digital clock--- */
 #digital-clock{
-    color:rgba(65, 245, 255, 1);
+    color: rgba(65, 245, 255, 1);
     font-size: 30px;
 }
+/* --- styling analog clock --- */
 .container{
-    height:200px;
+    height: 200px;
     width: 200px;
     border-radius: 50%;
     border: 1px solid white;
@@ -30,13 +33,12 @@ body{
     position: absolute;
     height: 100%;
     width: 100%;
-    transform: rotate(calc(calc(360deg / 12) * var(--i)));  
+    transform: rotate(calc(calc(360deg / 12) * var(--i)));
 }
 .time span{
     position: absolute;
-    left:46%;
-    transform: rotate(calc(calc(-360deg / 12) * var(--i)));  
-    
+    left: 46%;
+    transform: rotate(calc(calc(-360deg / 12) * var(--i)));
 }
 .sticks{
     position: relative;
@@ -47,7 +49,7 @@ body{
     align-items: center;
 }
 .sticks div{
-    position:absolute;
+    position: absolute;
     width: 4px;
     border-top-left-radius: 3px ;
     border-top-right-radius: 3px ;
